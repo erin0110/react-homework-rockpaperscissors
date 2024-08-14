@@ -36,15 +36,15 @@ function App() {
 
   const play = (userChoice) => {
     setUserSelect(choice[userChoice]);
-    let computerChoice = randomChoice();
+    const computerChoice = randomChoice();
     setComputerSelect(computerChoice);
     setResult(judgement(choice[userChoice], computerChoice));
   };
 
   const randomChoice = () => {
-    let itemArray = Object.keys(choice); //객체에 키 값만 뽑아서 어레이로 만들어주는 함수
-    let randomItem = Math.floor(Math.random() * itemArray.length);
-    let final = itemArray[randomItem];
+    const itemArray = Object.keys(choice); //객체에 키 값만 뽑아서 어레이로 만들어주는 함수
+    const randomItem = Math.floor(Math.random() * itemArray.length);
+    const final = itemArray[randomItem];
     return choice[final];
   };
   const judgement = (user, computer) => {
