@@ -29,3 +29,13 @@ main {
 .buttonWrapper button:hover {
   background-color: #ddd;
 }
+
+@media (max-width: 1023px) {
+  main {
+    padding: 20px;
+  }
+  .boxWrapper,
+  .buttonWrapper {
+    gap: 5px;
+  }
+}

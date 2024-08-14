@@ -67,3 +67,35 @@
   border-radius: 12px;
   margin: 0 auto;
 }
+
+@media (max-width: 1023px) {
+  .box {
+    min-width: 160px;
+    min-height: 310px;
+    padding: 20px;
+  }
+  .box h1 {
+    font-size: 20px;
+  }
+  .box h2 {
+    font-size: 32px;
+    margin: 12px auto;
+  }
+  .box figure {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .box figcaption {
+    width: 64px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  .box.win,
+  .box.lose,
+  .box.tie {
+    border-width: 4px;
+  }
+}
